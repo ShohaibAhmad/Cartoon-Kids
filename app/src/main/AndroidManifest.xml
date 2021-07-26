@@ -8,7 +8,6 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
-        android:networkSecurityConfig="@xml/network_security_config"
         android:allowBackup="true"
         android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
         android:hardwareAccelerated="true"
@@ -20,6 +19,7 @@
         android:theme="@style/Theme.CartoonKids"
         android:usesCleartextTraffic="true"
         tools:replace="android:appComponentFactory"
+        android:networkSecurityConfig="@xml/network_security_config"
         tools:targetApi="p">
         <activity
             android:name=".SplashActivity"

@@ -6,10 +6,8 @@
 
     //test APPLICATION_ID
 <!--    <string name="APPLICATION_ID">ca-app-pub-3940256099942544~3347511713</string>-->
-    //original APPLICATION_ID fb
-    <string name="APPLICATION_ID_fb">1153583415140210</string>
     // banner original ads
-    <string name="admob_test_banner">ca-app-pub-3377795912216048/1764951468</string>
+    <string name="admob_test_banner">ca-app-pub-3377795912216048/7433889155</string>
 
 <!--    -->
     // banner test ad
@@ -19,6 +17,6 @@
 
 
     //facebook original ads
-    <string name="fb_banner_test">549524506079624_549524949412913</string>
+    <string name="fb_banner_test">966276750833943_966280974166854</string>
 
 </resources>
