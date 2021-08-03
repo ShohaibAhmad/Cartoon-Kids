@@ -31,7 +31,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cartoon Kids"
+        android:text="Cartoon Kids "
         android:textColor="@color/teal_200"
         android:textSize="55dp"
         android:textStyle="bold" />
