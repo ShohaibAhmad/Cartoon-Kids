@@ -19,9 +19,6 @@ import android.view.MenuItem;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.initialization.InitializationStatus;
-import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 import com.google.firebase.messaging.FirebaseMessaging;
@@ -29,7 +26,6 @@ import com.promoteprovider.cartoonkids.Fragments.AboutFragment;
 import com.promoteprovider.cartoonkids.Fragments.HomeFragment;
 import com.promoteprovider.cartoonkids.Fragments.PolicyFragment;
 import com.promoteprovider.cartoonkids.Fragments.SettingFragment;
-import com.startapp.sdk.adsbase.StartAppSDK;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -37,17 +33,11 @@ public class MainActivity extends AppCompatActivity {
     LinearLayout linearLayout;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //ads
-        StartAppSDK.init(this, "206116038", true);
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
-            }
-        });
         //firebase massaging
         FirebaseMessaging.getInstance().subscribeToTopic("notification");
         //fragment

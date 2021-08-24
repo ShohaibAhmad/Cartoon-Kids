@@ -4,16 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/main"
     tools:context=".MainActivity">
-
-
-    <com.startapp.sdk.ads.banner.Banner
-        android:id="@+id/startAppBanner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:visibility="visible" />
 
 
     <LinearLayout
@@ -21,9 +13,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/bottomNavigation"
-        android:layout_below="@id/startAppBanner"
+        android:layout_alignTop="@+id/main"
         android:layout_centerHorizontal="true"
-        android:orientation="vertical" />
+        android:orientation="vertical"
+        tools:ignore="NotSibling" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigation"

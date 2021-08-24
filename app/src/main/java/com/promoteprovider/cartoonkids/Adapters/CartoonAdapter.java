@@ -24,6 +24,7 @@ public class CartoonAdapter extends RecyclerView.Adapter<CartoonAdapter.viewHold
     Context context;
 
 
+
     public CartoonAdapter(ArrayList<CartoonModel> list, Context context) {
         this.list = list;
         this.context = context;
